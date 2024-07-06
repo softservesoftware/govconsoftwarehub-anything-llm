@@ -54,6 +54,8 @@ RUN echo "Need to patch Puppeteer x Chromium support for ARM86 - installing dep!
     unzip chrome-linux.zip && \
     rm -rf chrome-linux.zip
 
+RUN echo "test"
+
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 ENV CHROME_PATH=/app/chrome-linux/chrome
 ENV PUPPETEER_EXECUTABLE_PATH=/app/chrome-linux/chrome
